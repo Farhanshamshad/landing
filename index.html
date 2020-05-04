@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/cfb69b445f.js" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/profile_pic1.jpg" alt="profile">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <button class="toggle" id="toggle">
+            <i class="fas fa-bars fa-2x"></i>
+        </button>
+        <h1>Farhan Shamshad</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <button class="btn" id="open">SignUp</button>
+    </header>
+
+    <div class="container">
+        <h2>What is about this landing page?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Accusantium cumque nostrum fugit quaerat cupiditate
+            asperiores ex, porro laudantium vel? Iste laborum ratione
+            vel ullam ut, nobis mollitia asperiores necessitatibus
+            possimus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Eveniet delectus odit pariatur non placeat, doloribus a.
+            Necessitatibus quos quas eum!</p>
+        <ul>
+            <h2>Benefits</h2>
+            <li>Life time</li>
+            <li>30 Days</li>
+            <li>1 Year</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Esse, cupiditate sed deleniti fuga debitis,
+            vero corporis exercitationem necessitatibus adipisci
+            nobis doloremque maxime quibusdam nostrum nisi architecto
+            quae, rem voluptatibus. Officia nulla tempore voluptatum
+            dolor, veritatis earum ullam animi maxime nostrum!
+        </p>
+    </div>
+
+
+    <!-- modal -->
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <button class="close-btn" id="close">
+                <i class="fa fa-times"></i></button>
+            <div class="modal-header">
+                <h3>Sign Up</h3>
+            </div>
+            <div class="modal-contant">
+                <h3>Register with us to get more offers</h3>
+                <form class="modal-form">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter Name" class="form-input" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Enter Email" class="form-input" required>
+                    </div>
+                    <div>
+                        <label for="password">Enter Password</label>
+                        <input type="password" id="password" placeholder="Enter Password" class="form-input" required>
+                    </div>
+                    <div>
+                        <label for="password2">Conform Password</label>
+                        <input type="password" id="password2" placeholder="Conform Password" class="form-input"
+                            required>
+                    </div>
+                    <button id="form-btn" class="ripple">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

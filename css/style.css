@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+:root{
+    --duration: 1s;
+    --primary:#085168;
+    --seendary:#09daf5;
+    --bcolor:rgba(200,200,200,0.1);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    transition: transform 0.4s ease-in-out;
+}
+/* nav styling */
+
+.show-nav{
+    transform: translate(250px);
+}
+nav{
+    background-color: var(--primary);
+    border-right: 2px solid var(--bcolor);
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transform: translateX(-100%);
+}
+nav .logo{
+    text-align: center;
+    padding: 30px 0;
+}
+nav .logo img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    padding: 20px;
+    border-bottom: 2px solid var(--bcolor);
+}
+nav ul li:nth-of-type(1){
+    border-top: 2px solid var(--bcolor);
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* header styling */
+header{
+    background-color: var(--primary);
+    color: #fff;
+    position: relative;
+    text-align: center;
+    padding: 40px 15px;
+    font-size: 140%;
+}
+header h1{
+    margin: 0;
+}
+header p{
+    margin:30px 0;
+}
+button,
+input[type="submit"]{
+    background-color: var(--seendary);
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    padding:8px 12px;
+}
+header button:focus{
+    outline: none;
+}
+.btn{
+    cursor: pointer;
+    padding:12px 30px;
+    font-size: 20px;
+}
+.toggle{
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+/* form styling */
+.container{
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 800px;
+    }
+.modal-container{
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+ .show-modal{
+    display: block;
+}
+.modal{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    position: absolute;
+    max-width: 100%;
+    width: 400px;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation-name: modalopen;
+    animation-duration: var(--duration);
+}
+.modal-header{
+    background-color: var(--primary);
+    padding: 15px;
+    color: #fff;
+}
+.modal-header h3{
+    margin:0;
+}
+.modal-contant{
+    padding: 20px;
+}
+.modal-form div{
+    margin: 15px 0;
+}
+.modal-form label{
+    display: block;
+    margin-bottom:5px;
+}
+.modal-form .form-input{
+    width: 100%;
+    padding: 8px;
+}
+.close-btn{
+    background-color: transparent;
+    position: absolute;
+    cursor: pointer;
+    font-size:25px ;
+    top: 0;
+    right: 0;
+}
+
+
+/* Ripple effect on form button*/
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+  }
+  .ripple:hover {
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+  }
+  .ripple:active {
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background 0s;
+  }
+
+
+@keyframes modalopen{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+    
